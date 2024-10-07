@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faltômetro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Faltômetro</h2>
+    <div>
+        <p>Selecione a carga horária da sua matéria:</p>
+        <label>
+            <input type="radio" id="vin" name="cargaHoraria" value="20"> Vinte horas
+        </label><br>
+        <label>
+            <input type="radio" id="qua" name="cargaHoraria" value="40"> Quarenta horas
+        </label><br>
+        <label>
+            <input type="radio" id="ses" name="cargaHoraria" value="60"> Sessenta horas
+        </label><br>
+        <label>
+            <input type="radio" id="oit" name="cargaHoraria" value="80"> Oitenta horas
+        </label><br>
+        <label>
+            <input type="radio" id="cen" name="cargaHoraria" value="120"> Cento e vinte horas
+        </label>
+    </div>
+    <br>
+    <label for="faltas">Faltas registradas:</label>
+    <input type="number" id="faltas" placeholder="Ex: 0">
+    <br><br>
+    <button onclick="calcular()">Calcular</button>
+    <br><br>
+    <input type="reset" value="Ver outra matéria" >
+    <div id="res"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
